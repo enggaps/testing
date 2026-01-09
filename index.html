@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kazoku Game</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      text-align: center;
+    }
+
+    header {
+      margin-top: 40px;
+      animation: fadeDown 1s ease;
+    }
+
+    header img {
+      width: 180px;
+      max-width: 70%;
+      filter: drop-shadow(0 0 15px #00ffe0);
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    main h1 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+
+    main p {
+      font-size: 0.95rem;
+      opacity: 0.9;
+    }
+
+    footer {
+      margin-bottom: 40px;
+      animation: fadeUp 1s ease;
+    }
+
+    .game-link {
+      display: inline-block;
+      padding: 12px;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 20px rgba(0, 255, 224, 0.4);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .game-link:hover {
+      transform: scale(1.08);
+      box-shadow: 0 0 35px rgba(0, 255, 224, 0.8);
+    }
+
+    .game-link img {
+      width: 230px;
+      max-width: 80vw;
+    }
+
+    /* Animations */
+    @keyframes fadeDown {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Mobile Adjust */
+    @media (max-width: 480px) {
+      main h1 {
+        font-size: 1.5rem;
+      }
+      header img {
+        width: 150px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- LOGO -->
+  <header>
+    <img src="https://via.placeholder.com/300x120?text=KAZOKU+GAME" alt="Kazoku Game Logo">
+  </header>
+
+  <!-- CONTENT -->
+  <main>
+    <h1>Welcome to Kazoku Game</h1>
+    <p>Pusat info game PS4, koleksi lengkap & update.</p>
+  </main>
+
+  <!-- LINK IMAGE -->
+  <footer>
+    <a class="game-link" 
+       href="https://www.mcpsp.com/threads/hako-dan-ps4-oyunlari-alfabetik-listesi-ps4-list-of-games.81570/" 
+       target="_blank">
+      <img src="https://via.placeholder.com/300x90?text=DAFTAR+GAME+PS4" alt="Daftar Game PS4">
+    </a>
+  </footer>
+
+</body>
+</html>
